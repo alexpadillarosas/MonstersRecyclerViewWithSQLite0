@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class Monster implements Serializable {
 
+    public static final String MONSTER_KEY = "monster_key";
+
     public Long id;
     public String name;
     public String description;

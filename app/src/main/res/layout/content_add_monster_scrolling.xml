@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="300dp">
+        android:minHeight="320dp">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
@@ -29,6 +29,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_marginTop="8dp"
@@ -36,15 +37,18 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toTopOf="parent">
-            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/monsterNameEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_marginTop="8dp"
@@ -52,7 +56,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/monsterDescriptionEditText"
                 android:layout_width="match_parent"
@@ -111,5 +115,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/cancelMonsterButton"
             app:layout_constraintTop_toBottomOf="@+id/scarinessSeekBar" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -1,4 +1,4 @@
-# MonstersRecyclerViewWithSQLite0
+# MonstersRecyclerViewWithSQLite0-start
 Starter Project for Monsters Recycler View
 
 ## Why a Recycler View?

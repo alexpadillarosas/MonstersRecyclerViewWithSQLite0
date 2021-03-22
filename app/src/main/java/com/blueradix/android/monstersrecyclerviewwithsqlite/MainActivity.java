@@ -43,14 +43,36 @@ public class MainActivity extends AppCompatActivity {
 
         /**
          * TODO: create a recycler view in content_main.xml file
+         *      set as Id: monstersRecyclerview
+         * 	    make it responsive by setting the constraints
          */
 
         /**
          * TODO: create a recycler view item call it recycler_item_view.xml (do not forget to use constraint layout)
+         *      Right click on Layout package -> New -> Layout Resource File
+         *      Add:
+         *          MaterialCardView
+         *          Constraint Layout Inside. (Set MinHeight to be able to replicate the layout)
+         *              3 guidelines (0.02, 0.70, 0.98)
+         * 	            ImageView  -> monsterImageView, scaleType: centerInside
+         * 	            TextView -> monsterNameTextView, textAppearance: textAppeareanceHeadline6
+         * 	            TextView -> monsterDescriptionTextView
+         * 	            Button -> Action 1
+         * 	            Button -> Action 2
+         * 	            TextView -> monsterTotalVotesTextView
+         * 	            RatingBar -> monsterRatingBar, style : @android:style/Widget.Material.RatingBar.Small
+         * 	            checkBox
+         */
+
+        /**
+         * TODO: create the viewHolder: MonsterViewHolder
+         *       create the Adapter: MonsterRecyclerViewAdapter
          */
 
         /**
          * TODO: Implement the RecyclerView in onCreate
+         *      create the Layout to use how to present the RecyclerView (Linear? Grid? )
+         *      set the created layout to your recyclerView
          */
 
         //Load Data from the database
@@ -61,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
          */
 
         /**
-         * TODO: create a RecyclerViewAdapter and pass the data
+         * TODO: create a RecyclerViewAdapter instance and pass the data
          */
 
         /**
